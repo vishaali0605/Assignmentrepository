@@ -1,0 +1,99 @@
+Create Table:
+->create table bookapplication(bookid int,bookname varchar(20),bookauthor varchar(20),bookgenre varchar(20),bookcost int);
+Inserting Values:
+->insert into bookapplication values(20,'Little Women','Lousia May Alcott','Domestic fiction',80);
+->insert into bookapplication values(21,'Gullivers Travels','Jonathan Swift','Fantasy fiction',200);
+-> insert into bookapplication values(22,'Treasure Island','Louis Stevenson','Adventure fiction',90);
+->insert into bookapplication values(23,'Jane Eyre','Charlotte Bronte','Romance fiction',150);
+->insert into bookapplication values(24,'Heidi','Johana Spyri','Domestic fiction',50);
+Displaying table:
+->select*from bookapplication;
++--------+-------------------+-------------------+-------------------+----------+
+| bookid | bookname          | bookauthor        | bookgenre         | bookcost |
++--------+-------------------+-------------------+-------------------+----------+
+|     20 | Little Women      | Lousia May Alcott | Domestic fiction  |       80 |
+|     22 | Treasure Island   | Louis Stevenson   | Adventure fiction |       90 |
+|     23 | Jane Eyre         | Charlotte Bronte  | Romance fiction   |      150 |
+|     21 | Gullivers Travels | Jonathan Swift    | Fantasy fiction   |      200 |
+|     24 | Heidi             | Johana Spyri      | Domestic fiction  |       50 |
++--------+-------------------+-------------------+-------------------+----------+
+5 rows in set (0.12 sec)
+
+
+After Insertion:(Add Books)
+->select*from bookapplication;
++--------+-------------------+-------------------+-------------------+----------+
+| bookid | bookname          | bookauthor        | bookgenre         | bookcost |
++--------+-------------------+-------------------+-------------------+----------+
+|     20 | Little Women      | Lousia May Alcott | Domestic fiction  |       80 |
+|     22 | Treasure Island   | Louis Stevenson   | Adventure fiction |       90 |
+|     23 | Jane Eyre         | Charlotte Bronte  | Romance fiction   |      150 |
+|     21 | Gullivers Travels | Jonathan Swift    | Fantasy fiction   |      200 |
+|     24 | Heidi             | Johana Spyri      | Domestic fiction  |       50 |
+|     50 | cinderella        | vish              | comics            |       80 |
++--------+-------------------+-------------------+-------------------+----------+
+6 rows in set (0.00 sec)
+
+Get Book Details:
+
+->Enter your choice
+2
+Enter the book id
+20
+20 | Little Women | Lousia May Alcott | Domestic fiction | 80
+
+
+All Book Details:
+
+->Book [bid=20, name=Little Women, bauthor=Lousia May Alcott, bgenre=Domestic fiction, bcost=80]
+Book [bid=22, name=Treasure Island, bauthor=Louis Stevenson, bgenre=Adventure fiction, bcost=90]
+Book [bid=23, name=Jane Eyre, bauthor=Charlotte Bronte, bgenre=Romance fiction, bcost=150]
+Book [bid=21, name=Gullivers Travels, bauthor=Jonathan Swift, bgenre=Fantasy fiction, bcost=200]
+Book [bid=24, name=Heidi, bauthor=Johana Spyri, bgenre=Domestic fiction, bcost=50]
+Book [bid=50, name=cinderella, bauthor=vish, bgenre=comics, bcost=80]
+
+Delete Book:
+
+Enter your choice
+4
+Enter the book id
+24
+Deleted Sucessfully
+
+->select*from bookapplication;
++--------+-------------------+-------------------+-------------------+----------+
+| bookid | bookname          | bookauthor        | bookgenre         | bookcost |
++--------+-------------------+-------------------+-------------------+----------+
+|     20 | Little Women      | Lousia May Alcott | Domestic fiction  |       80 |
+|     22 | Treasure Island   | Louis Stevenson   | Adventure fiction |       90 |
+|     23 | Jane Eyre         | Charlotte Bronte  | Romance fiction   |      150 |
+|     21 | Gullivers Travels | Jonathan Swift    | Fantasy fiction   |      200 |
+|     50 | cinderella        | vish              | comics            |       80 |
++--------+-------------------+-------------------+-------------------+----------+
+5 rows in set (0.04 sec)
+
+
+Update Book Details:
+
+Enter your choice
+5
+Enter the id for updating
+50
+Enter the name of book
+Candide
+Voltaire
+Literature
+80
+Updates Sucessfully
+->select*from bookapplication;
++--------+-------------------+-------------------+-------------------+----------+
+| bookid | bookname          | bookauthor        | bookgenre         | bookcost |
++--------+-------------------+-------------------+-------------------+----------+
+|     20 | Little Women      | Lousia May Alcott | Domestic fiction  |       80 |
+|     22 | Treasure Island   | Louis Stevenson   | Adventure fiction |       90 |
+|     23 | Jane Eyre         | Charlotte Bronte  | Romance fiction   |      150 |
+|     21 | Gullivers Travels | Jonathan Swift    | Fantasy fiction   |      200 |
+|     50 | Candide           | Voltaire          | Literature        |       80 |
++--------+-------------------+-------------------+-------------------+----------+
+5 rows in set (0.00 sec)
+
